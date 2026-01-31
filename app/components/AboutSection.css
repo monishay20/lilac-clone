@@ -1,0 +1,83 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 8%;
+  background: #d9d6cf; 
+  gap: 60px;
+}
+
+/* LEFT */
+.about-left {
+  flex: 1;
+  max-width: 520px;
+}
+
+.about-left h1 {
+  font-size: 56px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #1f2d1b;
+}
+
+.about-left p {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #2f3a2c;
+  margin-bottom: 40px;
+}
+
+/* BUTTON */
+.about-btn {
+  padding: 14px 28px;
+  border: 1px solid #1f2d1b;
+  background: transparent;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background: #1f2d1b;
+  color: white;
+}
+
+/* RIGHT IMAGES */
+.about-right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* big arch shape */
+.about-main-img {
+  width: 400px;
+  height: 720px;
+  object-fit: cover;
+  border-radius: 220px 220px 0 0; /* arch top */
+}
+
+/* small circle */
+.about-small-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  bottom: -40px;
+  right: -40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .about {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-right {
+    margin-top: 50px;
+  }
+}
